@@ -29,7 +29,7 @@ class Urlcrypt {
       $arr = str_split($str, 1);
 
       $m = "";
-      foreach($arr as $c)$m .= str_pad(decbin(array_search($c, Urlcrypt::$table)), 5, "0", STR_PAD_LEFT); 
+      foreach($arr as $c)$m .= str_pad(decbin(array_search($c, str_split(Urlcrypt::$table))), 5, "0", STR_PAD_LEFT); 
 
       $oldstr = "";
       for($i=0;$i<floor($n);$i++) $oldstr .= chr(bindec(substr($m, $i*8,8)));
