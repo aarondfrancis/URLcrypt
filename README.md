@@ -38,7 +38,7 @@ $encoded = Urlcrypt::encode("aaron");		// --> "mfqx2664"
 $decoded = Urlcrypt::decode("mfqx2664");	// --> "aaron"
 
 // encrypting and encoding
-Urlcrypt::key = "bcb04b7e103a0cd8b54763051cef08bc55abe029fdebae5e1d417e2ffb2a00a3";
+Urlcrypt::$key = "bcb04b7e103a0cd8b54763051cef08bc55abe029fdebae5e1d417e2ffb2a00a3";
 $encrypted = Urlcrypt::encrypt("aaron");
 		// --> "q0dmt61xkjyylA5mp3gm23khd1kg6w7pzxvd3nzcgb047zx8y581"
 $decrypted = Urlcrypt::decrypt("q0dmt61xkjyylA5mp3gm23khd1kg6w7pzxvd3nzcgb047zx8y581")
